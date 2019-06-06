@@ -6,6 +6,7 @@
   "main": "lib/cjs/index.js",
   "sideEffects": false,
   "scripts": {
+    "install": "npm run build",
     "lint": "eslint src && eslint test",
     "build": "npm run build:esm && npm run build:cjs && npm run build:umd && npm run build:umd:min",
     "build:esm": "gulp build:esm",
