@@ -6,10 +6,7 @@ gulp.task('build:esm', () => {
     .pipe(babel({
       babelrc: false,
       presets: [
-        ['env', { modules: false }]
-      ],
-      plugins: [
-        'transform-object-rest-spread'
+        ['@babel/preset-env', { modules: false }]
       ]
     }))
     .pipe(gulp.dest('lib/esm'));
